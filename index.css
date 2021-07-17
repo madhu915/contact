@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: "Pacifico", cursive;
+}
+
+.sec1 {
+  background: url("bg1.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5%;
+}
+
+.contact,
+.contact_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  width: 60%;
+  min-height: 90%;
+  background-color: #fcf0f0;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.contact_section_1 {
+  height: 70vh;
+  margin: 0;
+  background-color: #0aa;
+}
+
+.contact_section {
+  width: 50%;
+  transform: translateX(-10%);
+}
+
+.contact_section_1 {
+  box-sizing: border-box;
+  padding: 4%;
+  display: flexbox;
+}
+
+.location {
+  color: #c11674;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  text-align: center;
+  line-height: 3rem;
+  padding-right: 6%;
+  filter: drop-shadow(0 10px 2px rgb(0, 0, 0, 0.2));
+}
+
+.location:hover {
+  color: #c11674;
+}
+
+.logo {
+  /*  */
+  width: 20%;
+  height: 15%;
+  margin: 1rem 0;
+  filter: drop-shadow(0 10px 2px rgb(0, 0, 0, 0.2));
+}
+
+.b {
+  margin-left: 1rem;
+  color: #c11674;
+  font-weight: bolder;
+  font-family: "Ubuntu", sans-serif;
+  filter: drop-shadow(0 10px 2px rgb(0, 0, 0, 0.2));
+}
+
+.mail {
+  position: absolute;
+  bottom: 25%;
+  padding-bottom: 2%;
+}
+
+.stars {
+  position: absolute;
+  bottom: 10%;
+  color: #fcf0f0;
+}
+
+.cc{
+    color: orange;
+}
+.contact_section_2 {
+  flex-direction: column;
+  padding-bottom: 20%;
+}
+
+.contact_section_2_contents {
+  width: 80%;
+}
+
+label.active {
+  color: #0aa !important;
+}
+
+input:focus {
+  border-bottom: 1px solid #0aa !important;
+  box-shadow: 0 0 0 !important;
+}
+
+.contact_section_2 h3 {
+  color: #c11674;
+  font-size: 3rem;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 5%;
+}
+
+.btn {
+  position: relative;
+  display: block;
+  background-color: #fcf0f0;
+  color: #c11674;
+  font-size: 1.5rem;
+  overflow: hidden;
+  text-transform: capitalize;
+  transition: 0.3s all ease;
+  border-radius: 20px;
+}
+
+.btn1:hover {
+  background-color: #c11674;
+  color: #fcf0f0;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact {
+    width: 85%;
+    min-height: 85%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contact_section_1 {
+    display: none;
+  }
+
+  .contact_section_2 {
+    width: 100%;
+    transform: translateX(0);
+  }
+
+  .contact_section_2 h3 {
+    font-size: 2rem;
+  }
+}
